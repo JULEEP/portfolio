@@ -1,0 +1,112 @@
+/* Ensure the html and body elements take full height */
+html, body {
+  height: 100%;
+  margin: 0; /* Remove default margin */
+}
+
+/* Global background image for the entire page */
+body {
+  background-image: url('https://wallpaperaccess.com/full/1491563.jpg');
+  background-size: cover; /* Ensures the image covers the entire screen */
+  background-position: center; /* Center the image */
+  background-attachment: fixed; /* Keeps the background fixed while scrolling */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  font-family: Arial, sans-serif; /* Add a font-family for a better design */
+  color: white; /* Default text color */
+}
+
+/* Create a full-height container to hold content */
+.content-overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  height: 100%; /* Full height to cover entire page */
+  padding: 20px; /* Add some padding for spacing */
+  border-radius: 15px; /* Rounded corners for the content */
+  overflow: hidden; /* Prevent content from overflowing */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Content sections */
+.content-overlay > section {
+  background-color: rgba(19, 18, 18, 0.596); /* Semi-transparent white background for sections */
+  border-radius: 10px; /* Rounded corners for each section */
+  margin: 20px 0; /* Margin between sections */
+  padding: 20px; /* Padding inside sections */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow around the sections */
+  text-align: center; /* Align text in the center */
+}
+
+/* Optional: Add a text color for better readability */
+.content-overlay h2, .content-overlay p {
+  color: rgb(24, 23, 23); /* Light text color for contrast */
+  margin: 0;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablet (min-width: 600px) */
+@media (max-width: 768px) {
+  .content-overlay {
+    padding: 15px; /* Reduce padding on smaller screens */
+  }
+
+  /* Content sections */
+  .content-overlay > section {
+    padding: 15px; /* Reduce padding inside sections */
+  }
+
+  /* Adjust text size for smaller screens */
+  .content-overlay h2 {
+    font-size: 1.75rem;
+  }
+
+  .content-overlay p {
+    font-size: 1rem;
+  }
+}
+
+/* Mobile (min-width: 320px) */
+@media (max-width: 480px) {
+  .content-overlay {
+    padding: 10px; /* Reduce padding on mobile */
+  }
+
+  .content-overlay > section {
+    padding: 10px; /* Reduce padding inside sections */
+  }
+
+  /* Content Section: Adjust width for mobile */
+  .content-overlay > section {
+    margin: 10px 0; /* Less margin on mobile */
+  }
+
+  /* Adjust font size for mobile */
+  .content-overlay h2 {
+    font-size: 1.5rem; /* Smaller header on mobile */
+  }
+
+  .content-overlay p {
+    font-size: 0.9rem; /* Smaller paragraph font on mobile */
+  }
+}
+
+/* Large Desktop (min-width: 1200px) */
+@media (min-width: 1200px) {
+  .content-overlay {
+    padding: 30px; /* More padding on large screens */
+  }
+
+  .content-overlay > section {
+    padding: 30px; /* More padding in each section */
+  }
+
+  /* Content Section: Larger text */
+  .content-overlay h2 {
+    font-size: 2.25rem;
+  }
+
+  .content-overlay p {
+    font-size: 1.1rem;
+  }
+}

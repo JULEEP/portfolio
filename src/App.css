@@ -2,39 +2,77 @@
 html, body {
   height: 100%;
   margin: 0; /* Remove default margin */
+  position: relative; /* Establish a stacking context */
 }
 
-/* Global background image for the entire page */
+/* Global background image and gradient for the entire page */
 body {
-  background-image: url('https://wallpaperaccess.com/full/1491563.jpg');
-  background-size: cover; /* Ensures the image covers the entire screen */
+  background: 
+    linear-gradient(to bottom, rgba(6, 3, 184, 0.9), rgba(244, 244, 247, 0.9)), 
+    url('C:/Users/hi/Desktop/portfolio/frontend/public/background.svg'); /* Path to the background image */
+  background-size: cover; /* Ensures the image and gradient cover the entire screen */
   background-position: center; /* Center the image */
   background-attachment: fixed; /* Keeps the background fixed while scrolling */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-repeat: no-repeat; /* Prevents the image and gradient from repeating */
   font-family: Arial, sans-serif; /* Add a font-family for a better design */
-  color: white; /* Default text color */
+
+  /* Animation for fade-in effect */
+  animation: fadeInBackground 3s ease-in-out forwards; /* Apply the fade-in animation */
+
+  /* Adding a filter for sharpness */
+  filter: contrast(1.2) brightness(1.1) saturate(1.5); /* Enhance contrast, brightness, and saturation */
+}
+
+/* @keyframes for the background fade-in animation */
+@keyframes fadeInBackground {
+  0% {
+    opacity: 0; /* Start invisible */
+  }
+  100% {
+    opacity: 1; /* Fade in to fully visible */
+  }
 }
 
 /* Create a full-height container to hold content */
 .content-overlay {
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
   height: 100%; /* Full height to cover entire page */
   padding: 20px; /* Add some padding for spacing */
-  border-radius: 15px; /* Rounded corners for the content */
+  border-radius: 50px; /* Rounded corners for the content */
   overflow: hidden; /* Prevent content from overflowing */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  opacity: 0; /* Start as invisible */
+  animation: fadeInContent 2s ease-in-out forwards; /* Apply the fade-in animation */
+}
+
+/* @keyframes for the content fade-in animation */
+@keyframes fadeInContent {
+  0% {
+    opacity: 0; /* Start invisible */
+  }
+  100% {
+    opacity: 1; /* Fade in to fully visible */
+  }
 }
 
 /* Content sections */
 .content-overlay > section {
-  background-color: rgba(19, 18, 18, 0.596); /* Semi-transparent white background for sections */
+  background-color: rgba(14, 13, 13, 0.596); /* Semi-transparent background for sections */
   border-radius: 10px; /* Rounded corners for each section */
-  margin: 20px 0; /* Margin between sections */
+  margin: 20px auto; /* Center the section horizontally and add top/bottom margin */
   padding: 20px; /* Padding inside sections */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow around the sections */
   text-align: center; /* Align text in the center */
+  width: 100%; /* Ensure it takes full width on small screens */
+  max-width: 800px; /* Restrict the maximum width of the sections */
+}
+
+/* For larger screens, the section should be centered with a max width */
+@media (min-width: 768px) {
+  .content-overlay > section {
+    width: 80%; /* Use 80% width on medium to large screens */
+  }
 }
 
 /* Optional: Add a text color for better readability */
@@ -48,7 +86,7 @@ body {
 /* Tablet (min-width: 600px) */
 @media (max-width: 768px) {
   .content-overlay {
-    padding: 15px; /* Reduce padding on smaller screens */
+    padding: 8px; /* Reduce padding on smaller screens */
   }
 
   /* Content sections */

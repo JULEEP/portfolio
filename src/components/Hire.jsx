@@ -21,7 +21,6 @@ const Hire = () => {
               {/* Text on bottom for mobile, right for desktop */}
               <div className="w-full md:w-1/2 text-left m-4 ml-10">
                 <h3 className="text-lg font-semibold text-white">Unlimited Revisions</h3>
-                <h3 className="text-sm text-white">Ensuring satisfaction every time.</h3>
               </div>
             </div>
   
@@ -38,7 +37,6 @@ const Hire = () => {
               {/* Text on bottom for mobile, right for desktop */}
               <div className="w-full md:w-1/2 text-left ml-10">
                 <h3 className="text-lg font-semibold text-white">Express Delivery</h3>
-                <h3 className="text-sm text-white">Timely completion of projects.</h3>
               </div>
             </div>
   
@@ -55,7 +53,6 @@ const Hire = () => {
               {/* Text on bottom for mobile, right for desktop */}
               <div className="w-full md:w-1/2 text-left ml-10">
                 <h3 className="text-lg font-semibold text-white">Premium Quality Work</h3>
-                <h3 className="text-sm text-white">Attention to detail in every design.</h3>
               </div>
             </div>
   
@@ -72,7 +69,6 @@ const Hire = () => {
               {/* Text on bottom for mobile, right for desktop */}
               <div className="w-full md:w-1/2 text-left ml-10">
                 <h3 className="text-lg font-semibold text-white">Masterpiece Results</h3>
-                <h3 className="text-sm text-white">Work that exceeds expectations.</h3>
               </div>
             </div>
   

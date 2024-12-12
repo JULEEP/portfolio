@@ -21,14 +21,14 @@ const Portfolio = () => {
   return (
     <section className="py-20">
       <div className="container mx-auto px-6 text-center">
-        <h3 className="text-2xl font-semibold text-white mb-8">Portfolio</h3>
+        <h3 className="text-2xl font-semibold text-white mb-8 mt-8">Portfolio</h3>
         <div className="grid md:grid-cols-2 lg:grid-cols-1 gap-12">
           {/* Third Item: Video Editing (Text Above and Video Below in all views) */}
           <div className="flex flex-col items-center justify-center p-6 rounded-lg shadow-lg bg-transparent">
             {/* Text */}
             <div className="w-full md:w-1/2 text-left mb-4">
-              <h3 className="font-semibold text-white">Video Editing</h3>
-              <h3 className="text-white">Professional video edits showcasing my work.</h3>
+              <h3 className="font-semibold text-white ml-20">Video Editing</h3>
+              <h3 className="text-white mt-4">Professional video edits showcasing my work.</h3>
             </div>
             {/* YouTube Video Player */}
             <div className="w-full md:w-1/2 mb-4">
@@ -70,8 +70,8 @@ const Portfolio = () => {
               />
             </div>
             <div className="w-full md:w-1/2 text-left ml-10">
-              <h3 className="font-semibold text-white">Graphic Design</h3>
-              <h3 className="text-white">Creative designs for various industries.</h3>
+              <h3 className="font-semibold text-white ml-16">Graphic Design</h3>
+              <h3 className="text-white mt-4">Creative designs for various industries.</h3>
             </div>
           </div>
 

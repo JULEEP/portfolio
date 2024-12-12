@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <section className="py-20 bg-gray-900">
       <div className="container mx-auto px-6 text-center">
-        <h3 className="text-3xl font-semibold text-white mb-8">Contact Me</h3>
+        <h3 className="text-3xl font-semibold text-white mb-8 mt-8">Contact Me</h3>
 
         {/* Icons with Links */}
         <div className="flex justify-center space-x-8 text-3xl mb-8 mt-8">

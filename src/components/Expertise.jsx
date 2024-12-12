@@ -22,10 +22,10 @@ const Expertise = () => {
               <h3 className="text-lg font-semibold text-white ml-10">Video Editing</h3>
               <ul className="list-disc text-left pl-5 text-white mt-4">
                 <li className="ml-8">
-                  <FaFilm className="inline-block text-white mr-2" /> Adobe After Effects - 95%
+                <FaFilm className="inline-block text-white text-sm mr-2" /> Adobe After Effects - 95%
                 </li>
                 <li className="ml-8">
-                  <FaFilm className="inline-block text-white mr-2" /> Adobe Premiere Pro - 90%
+                <FaFilm className="inline-block text-white text-xs mr-2" /> Adobe Premiere Pro - 90%
                 </li>
                 <li className="ml-8">
                   <FaApple className="inline-block text-white mr-2" /> Final Cut Pro - 85%
